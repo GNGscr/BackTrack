@@ -327,6 +327,7 @@ img {
     width: 100px;
     border-radius: 25%;
     margin-right: .88vw;
+    animation: zoom-fade-in 1s cubic-bezier(0.26, 0.54, 0.32, 1) 0s forwards;
 }
 .item:hover {
     animation: hover-shake .3s cubic-bezier(0.26, 0.54, 0.32, 1) 0s forwards;
