@@ -19,11 +19,11 @@
 
 
 @keyframes hover-rotate {
-    0% {transform: rotate(5deg);}
-    20% {transform: rotate(-5deg);}
-    40% {transform: rotate(5deg);}
-    60% {transform: rotate(-5deg);}
-    80% {transform: rotate(5deg);}
+    0% {transform: rotate(10deg);}
+    20% {transform: rotate(-10deg);}
+    40% {transform: rotate(10deg);}
+    60% {transform: rotate(-10deg);}
+    80% {transform: rotate(10deg);}
     100% {transform: rotate(0deg);}
 }
 
@@ -174,7 +174,7 @@ img {
     border-radius: 5px;
 }
 .slider-itm:hover {
-    animation: hover-rotate .2s cubic-bezier(0.26, 0.54, 0.32, 1) 0s forwards;
+    animation: hover-rotate .3s cubic-bezier(0.26, 0.54, 0.32, 1) 0s forwards;
     /* animation: hover-rotate .3s ease-in-out 0s forwards; */
 }
 .nav-bar {
