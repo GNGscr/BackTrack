@@ -18,7 +18,7 @@
     // createItems();
     // loadData();
     // templateUser();
-})();
+}());
 
 
 function mobileMenu() {
