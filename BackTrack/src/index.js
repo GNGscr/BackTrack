@@ -32,7 +32,7 @@ function mobileMenu() {
     HM.addEventListener('click', () => {
     
         MN.style.transition = '500ms ease-in-out';
-        CC.style.transition = '1s ease in out';
+        CC.style.transition = '1s ease-in-out';
     
         if(clicked === false) {
             MN.style.transform = 'translateX(41vw)'; 
