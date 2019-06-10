@@ -40,7 +40,7 @@ function mobileMenu() {
 
             setTimeout(() => {
                 contentTransitionShow(CC);
-            }, 50);
+            }, 0);
 
         } else if(clicked === true) {
             MN.style.transform = 'translateX(-41vw)';
