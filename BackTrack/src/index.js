@@ -42,9 +42,7 @@ function mobileMenu() {
         } else if(clicked === true) {
             MN.style.transform = 'translateX(-41vw)';
             clicked = false;
-
             contentTransitionHide(CC);   
-
         }
     });
 };
