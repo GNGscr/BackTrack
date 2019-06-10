@@ -465,7 +465,7 @@ input:focus {
     .content-cover {
         position: fixed;
         top: 7.5vh;
-        left: 4vw;
+        left: 0vw;
         width: 100vw;
         background-color: rgba(0, 0, 0, 0.6);
     }
