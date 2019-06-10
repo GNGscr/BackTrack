@@ -20,30 +20,54 @@
     // templateUser();
 })();
 
+const CC = document.querySelector('.content-cover');
+CC.style.transition = '500ms ease-in-out';
 
 function mobileMenu() {
 
     const HM = document.querySelector('.hamburger-menu');
     const MN = document.querySelector('.mobile-nav');
-    const CC = document.querySelector('.content-cover');
 
     let clicked = false;
     
     HM.addEventListener('click', () => {
     
         MN.style.transition = '500ms ease-in-out';
-        CC.style.transition = '500ms ease-in-out';
     
         if(clicked === false) {
             MN.style.transform = 'translateX(41vw)'; 
             clicked = true;
-            CC.style.opacity = 1;
+            CC.style.display = 'flex';
+
+            setTimeout(() => {
+                contentTransitionShow();
+            }, 50);
+            
         } else if(clicked === true) {
             MN.style.transform = 'translateX(-41vw)';
             clicked = false;
-            CC.style.opacity = 0;
+
+            contentTransitionHide();   
+
+            setTimeout(() => {
+                hidingDisplay();
+            }, 1000);
         }
     });
+};
+
+function contentTransitionShow() {
+    CC.style.transition = '1s ease-in-out';
+    CC.style.opacity = 1;
+};
+
+function contentTransitionHide() {
+    CC.style.transition = '1s ease-in-out';
+    CC.style.opacity = 0;
+};
+
+function hidingDisplay() {
+    CC.style.display = 'none';
 };
 
 // function loadData() {
