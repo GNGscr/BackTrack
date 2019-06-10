@@ -1,23 +1,5 @@
-// import { inherits } from 'util';
-
-
-// let templates = {};
-// templates.imgTemplate = `
-// <div class="item">
-//     <img class="box-pic" src={{placeholder}} alt="Beatles img" srcset="">
-// </div>`;
-// templates.imageTemplate = `
-// <div class="image fade">
-// <img class="box-pic" src={{"../IMG/album19.jpeg"}} alt="Beatles img" srcset="">
-// </div>`;
-
-
-
 (function init() {
     mobileMenu();
-    // createItems();
-    // loadData();
-    // templateUser();
 }());
 
 
@@ -63,57 +45,3 @@ function contentTransitionHide(CC) {
 function hidingDisplay(content) {
     content.style.display = 'none';
 };
-
-// function loadData() {
-//     fetch("./data/ex_data.json")
-//         .then(res => res.json())
-//         .then((data) => {
-//             templatesUser(data.innerData);
-//         }
-//     );
-// };
-
-
-// function createItems() {
-
-//     let item = document.createElement('div');
-//     // item.className = item;
-//     item.classList.add('item');
-    
-//     let img = document.createElement('img');
-//     img.type = 'img';
-//     img.setAttribute('src', '');
-//     img.setAttribute('alt', '');
-
-//     img.innerHTML = `<img class="box-pic" src={${code}} alt="Beatles img" srcset="">`;
-//     item.appendChild(img);
-    
-//     const items;
-//     items.forEach(item => {
-        
-//         item = `
-//         <div class="item">
-//         <img class="box-pic" src={${item}} alt={${loopItemName}} srcset="">
-//         </div>
-//         `;
-//     });
-//     LNG.appendChild(items);
-// }
-
-
-// function templatesUser(items) {
-
-    // const LNG = document.querySelector('.long');
-
-    // Array.from(something).map(item => {
-    //     item.innerHTML = ``;
-    // });
-    
-//     let items = [];
-//     items.push();
-    
-//     items.forEach(item => {
-//         img.innerHTML += templates.imgTemplate.replace("{{placeholder}}", item.name.id);
-//     });
-//     LNG.appendChild(items);
-// };
