@@ -45,9 +45,6 @@ function mobileMenu() {
 
             contentTransitionHide(CC);   
 
-            setTimeout(() => {
-                hidingDisplay(CC);
-            }, 700);
         }
     });
 };
@@ -60,6 +57,9 @@ function contentTransitionShow(CC) {
 function contentTransitionHide(CC) {
     CC.style.transition = '.7s ease-in-out';
     CC.style.opacity = 0;
+    setTimeout(() => {
+        hidingDisplay(CC);
+    }, 700);
 };
 
 function hidingDisplay(CC) {
