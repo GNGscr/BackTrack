@@ -172,6 +172,7 @@ img {
     width: 18.3vw;
     margin: .8vw;    
     border-radius: 5px;
+    animation: zoom-fade 1s cubic-bezier(0.26, 0.54, 0.32, 1) 0s forwards;
 }
 .slider-itm:hover {
     animation: hover-rotate .3s cubic-bezier(0.26, 0.54, 0.32, 1) 0s forwards;
