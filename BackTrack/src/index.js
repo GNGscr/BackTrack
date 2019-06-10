@@ -50,18 +50,18 @@ function mobileMenu() {
 
             setTimeout(() => {
                 hidingDisplay(CC);
-            }, 1000);
+            }, 700);
         }
     });
 };
 
 function contentTransitionShow(CC) {
-    CC.style.transition = '1s ease-in-out';
+    CC.style.transition = '.7s ease-in-out';
     CC.style.opacity = 1;
 };
 
 function contentTransitionHide(CC) {
-    CC.style.transition = '1s ease-in-out';
+    CC.style.transition = '.7s ease-in-out';
     CC.style.opacity = 0;
 };
 
