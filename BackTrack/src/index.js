@@ -48,15 +48,15 @@ function mobileMenu() {
     });
 };
 
-function contentTransitionShow(content) {
-    content.style.opacity = 1;
+function contentTransitionShow(CC) {
+    CC.style.opacity = 1;
 };
 
-function contentTransitionHide(content) {
-    content.style.opacity = 0;
+function contentTransitionHide(CC) {
+    CC.style.opacity = 0;
 
     setTimeout(() => {
-        hidingDisplay(content);
+        hidingDisplay(CC);
     }, 700);
 };
 
