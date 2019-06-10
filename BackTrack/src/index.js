@@ -37,10 +37,7 @@ function mobileMenu() {
             MN.style.transform = 'translateX(41vw)'; 
             clicked = true;
             CC.style.display = 'flex';
-
-            setTimeout(() => {
-                contentTransitionShow(CC);
-            }, 0);
+            contentTransitionShow(CC);
 
         } else if(clicked === true) {
             MN.style.transform = 'translateX(-41vw)';
