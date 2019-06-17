@@ -3,7 +3,7 @@
 }());
 
 function mobileMenu() {
-    
+
     const HM = document.querySelector('.hamburger-menu');
     const MN = document.querySelector('.mobile-nav');
     const CC = document.querySelector('.content-cover');
@@ -12,24 +12,26 @@ function mobileMenu() {
 
     let Arr = [];
     Arr.push(HM, CC);
-    
+
     Arr.forEach(item => item.addEventListener('click', () => {
-        
+
         MN.style.transition = '500ms ease-in-out';
         CC.style.transition = '.7s ease-in-out';
-        MN.classList.toggle('show'); 
+        MN.classList.toggle('show');
 
-        if(clicked === false) {
+
+        if (clicked === false) {
             CC.style.display = 'flex';
             CC.style.opacity = 1;
             clicked = true;
+
         } else {
             // MN.classList.remove('show');
-            CC.style.opacity = 0; 
+            CC.style.opacity = 0;
             setTimeout(() => {
                 CC.style.display = 'none';
                 clicked = false;
-            }, 700); 
+            }, 700);
         }
     }));
 };
