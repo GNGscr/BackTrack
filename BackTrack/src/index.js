@@ -1,4 +1,4 @@
-(function init() {
+(function() {
     mobileMenu();
 }());
 
@@ -10,8 +10,8 @@ function mobileMenu() {
     const CC = document.querySelector('.content-cover');
 
     let clicked = false;
-
     let Arr = [];
+    
     Arr.push(HM, CC);
     
     Arr.forEach(item => item.addEventListener('click', () => {
