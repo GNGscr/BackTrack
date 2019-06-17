@@ -16,13 +16,15 @@ function mobileMenu() {
     Arr.forEach(item => item.addEventListener('click', () => {
 
         MN.style.transition = '500ms ease-in-out';
-        CC.style.transition = '500ms ease-in-out';
+        CC.style.transition = '.5s ease-in-out';
 
         if (clicked === false) {
             MN.classList.add('show');
             CC.style.display = 'flex';
-            CC.style.opacity = 1;
-            clicked = true;                
+            setTimeout(() => {
+                CC.style.opacity = 1;
+                clicked = true;  
+            }, 0);
         } else {
             MN.classList.remove('show');
             CC.style.opacity = 0;
