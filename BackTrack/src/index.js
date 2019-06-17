@@ -23,7 +23,6 @@ function mobileMenu() {
             CC.style.display = 'flex';
             CC.style.opacity = 1;
             clicked = true;
-
         } else {
             MN.classList.remove('show');
             CC.style.opacity = 0;
