@@ -350,6 +350,8 @@ img {
     height: 50px;
     width: 77.5vw;
     text-indent: -15px;
+    /* display: flex; */
+    /* align-items: center; */
     justify-content: space-between;
     background-color: #f8f8f8;
     font-family: FivoSans-Light;
@@ -586,9 +588,13 @@ input:focus {
         margin-top: 25vw;
     }
     .input-field {
-        padding: 0 5vw;
+        padding: 0 3vw;
         height: 12vw;
         width: 85vw;
+        text-indent: -5px;
+    }
+    input {
+        text-indent: 10px;
     }
     .box {
         flex-direction: column;
