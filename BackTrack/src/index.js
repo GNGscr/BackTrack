@@ -21,12 +21,13 @@ function mobileMenu() {
 
 
         if (clicked === false) {
+//             MN.classList.add('show');
             CC.style.display = 'flex';
             CC.style.opacity = 1;
             clicked = true;
 
         } else {
-            // MN.classList.remove('show');
+//             MN.classList.remove('show');
             CC.style.opacity = 0;
             setTimeout(() => {
                 CC.style.display = 'none';
