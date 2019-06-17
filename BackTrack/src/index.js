@@ -17,17 +17,15 @@ function mobileMenu() {
 
         MN.style.transition = '500ms ease-in-out';
         CC.style.transition = '.7s ease-in-out';
-        MN.classList.toggle('show');
-
 
         if (clicked === false) {
-//             MN.classList.add('show');
+            MN.classList.add('show');
             CC.style.display = 'flex';
             CC.style.opacity = 1;
             clicked = true;
 
         } else {
-//             MN.classList.remove('show');
+            MN.classList.remove('show');
             CC.style.opacity = 0;
             setTimeout(() => {
                 CC.style.display = 'none';
