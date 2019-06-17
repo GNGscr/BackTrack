@@ -16,7 +16,7 @@ function mobileMenu() {
     Arr.forEach(item => item.addEventListener('click', () => {
 
         MN.style.transition = '500ms ease-in-out';
-        CC.style.transition = '.7s ease-in-out';
+        CC.style.transition = '.6s ease-in-out';
 
         if (clicked === false) {
             MN.classList.add('show');
