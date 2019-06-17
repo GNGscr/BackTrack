@@ -21,8 +21,10 @@ function mobileMenu() {
         if (clicked === false) {
             MN.classList.add('show');
             CC.style.display = 'flex';
-            CC.style.opacity = 1;
-            clicked = true;
+            setTimeout(() => {
+                CC.style.opacity = 1;
+                clicked = true;                
+            }, 0);
         } else {
             MN.classList.remove('show');
             CC.style.opacity = 0;
