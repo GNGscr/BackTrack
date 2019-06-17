@@ -10,38 +10,29 @@ function mobileMenu() {
     const CC = document.querySelector('.content-cover');
 
     let clicked = false;
+
+    let Arr = [];
+    Arr.push(HM, CC);
     
-    HM.addEventListener('click', () => {
+    Arr.forEach(item => item.addEventListener('click', () => {
     
         MN.style.transition = '500ms ease-in-out';
         CC.style.transition = '.7s ease-in-out';
     
         if(clicked === false) {
-            MN.style.transform = 'translateX(41vw)'; 
-            clicked = true;
+            MN.classList.add('show'); 
             CC.style.display = 'flex';
-            contentTransitionShow(CC);
+            CC.style.opacity = 1;
+            clicked = true;
 
         } else if(clicked === true) {
-            MN.style.transform = 'translateX(-41vw)';
-            clicked = false;
-            contentTransitionHide(CC);   
+            MN.classList.remove('show');
+            CC.style.opacity = 0; 
+            setTimeout(() => {
+                CC.style.display = 'none';
+                clicked = false;
+            }, 700); 
         }
-    });
-};
+    }));
 
-function contentTransitionShow(CC) {
-    CC.style.opacity = 1;
-};
-
-function contentTransitionHide(CC) {
-    CC.style.opacity = 0;
-    
-    setTimeout(() => {
-        hidingDisplay(CC);
-    }, 700);
-};
-
-function hidingDisplay(content) {
-    content.style.display = 'none';
 };
