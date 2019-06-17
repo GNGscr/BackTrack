@@ -4,32 +4,32 @@
 
 function mobileMenu() {
 
-    const HM = document.querySelector('.hamburger-menu');
-    const MN = document.querySelector('.mobile-nav');
-    const CC = document.querySelector('.content-cover');
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const mobileNav = document.querySelector('.mobile-nav');
+    const contentCover = document.querySelector('.content-cover');
 
     let clicked = false;
 
     let Arr = [];
-    Arr.push(HM, CC);
+    Arr.push(hamburgerMenu, contentCover);
 
     Arr.forEach(item => item.addEventListener('click', () => {
 
-        MN.style.transition = '500ms ease-in-out';
-        CC.style.transition = '.5s ease-in-out';
+        mobileNav.style.transition = '500ms ease-in-out';
+        contentCover.style.transition = '.5s ease-in-out';
 
         if (clicked === false) {
-            MN.classList.add('show');
-            CC.style.display = 'flex';
+            mobileNav.classList.add('show');
+            contentCover.style.display = 'flex';
             setTimeout(() => {
-                CC.style.opacity = 1;
+                contentCover.style.opacity = 1;
                 clicked = true;  
             }, 0);
         } else {
-            MN.classList.remove('show');
-            CC.style.opacity = 0;
+            mobileNav.classList.remove('show');
+            contentCover.style.opacity = 0;
             setTimeout(() => {
-                CC.style.display = 'none';
+                contentCover.style.display = 'none';
                 clicked = false;
             }, 500);
         }
