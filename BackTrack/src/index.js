@@ -11,7 +11,6 @@ function mobileMenu() {
 
     let clicked = false;
     let Arr = [];
-    
     Arr.push(HM, CC);
     
     Arr.forEach(item => item.addEventListener('click', () => {
