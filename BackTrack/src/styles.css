@@ -70,7 +70,7 @@
 }
 
 .wrapper, .hdr2, .hdr3, .silder-big, .nav-bar, .box, .box-img, .nav-wrapper, .nav-div, .menu, .menu-div, .logo-wrapper,
-.my-songs, .my-songs-btn, .long, .input-wrapper, .input-field, .footer, .ftr-btn {
+.my-songs, .my-songs-btn, .long,.input-wrapper, .input-field, .footer, .ftr-btn {
     align-items: center;
 }
 
@@ -492,7 +492,8 @@ input:focus {
         font-size: 1rem;
     }
     .long {
-        margin-left: 155vw;
+        /* margin-left: 155vw; */
+        margin-left: 84.4vw;
         justify-content: center;
     }
     .silder-big {
@@ -546,7 +547,8 @@ input:focus {
         padding-left: 2vw; 
     }
     .gray {
-        width: 400vh;
+        /* width: 200vw; */
+        width: 260vw;
         margin-top: 0;
         height: 25vw;
     }
@@ -640,7 +642,8 @@ input:focus {
 
 @media all and (max-width: 400px) {
     .long {
-        margin-left: 180vw;
+        /* margin-left: 180vw; */
+        margin-left: 84vw;
     }
     .item {
         padding-right: 2.25vw;
