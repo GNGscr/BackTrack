@@ -16,7 +16,7 @@ function mobileMenu() {
     Arr.forEach(item => item.addEventListener('click', () => {
 
         mobileNav.style.transition = '500ms ease-in-out';
-        contentCover.style.transition = '.5s ease-in-out';
+        contentCover.style.transition = '500ms ease-in-out';
 
         if (clicked === false) {
             mobileNav.classList.add('show');
